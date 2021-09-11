@@ -5,13 +5,13 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Translate to EN
+# @raycast.title Translate to FR
 # @raycast.mode fullOutput
 # @raycast.packageName Translate Shell
 
 # Optional parameters:
 # @raycast.argument1 {"type": "text", "placeholder": "Word or Sentence"}
-# @raycast.icon 🇺🇸
+# @raycast.icon 🇫🇷
 
 # Documentation:
 # @raycast.author tiancheng92
@@ -23,5 +23,5 @@ if ! command -v trans &> /dev/null; then
 	exit 1;
 fi
 
-trans :en "$1" # display
-trans :en "$1" -b | pbcopy # copy brief to clipboard
+trans :fr "$1" # display
+trans :fr "$1" -b | pbcopy # copy brief to clipboard

@@ -63,6 +63,7 @@ search = sys.argv[1]
 
 # Catch the exception when there's more than one definition
 try:
+    wikipedia.set_lang("fr")
     wikisearch = wikipedia.page(search)
 except wikipedia.exceptions.DisambiguationError as e:
     print(red('Which one do you mean?\n'))

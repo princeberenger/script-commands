@@ -8,7 +8,7 @@
 # @raycast.packageName Dashboard
 
 # Optional parameters:
-# @raycast.icon 🕐
+# @raycast.icon 🗺
 #
 # Documentation:
 # @raycast.description Show the time from elsewhere in the world
@@ -17,8 +17,7 @@
 
 # Timezones can be found in /usr/share/zoneinfo
 
-nyc=$(TZ=America/New_York date +"%H:%M")
-lon=$(TZ=Europe/London date +"%H:%M")
-bne=$(TZ=Australia/Brisbane date +"%H:%M")
+coo=$(TZ=Africa/Porto-Novo date +"%H:%M")
+tpe=$(TZ=Asia/Taipei date +"%H:%M")
 
-echo "New York City: $nyc | London: $lon | Brisbane: $bne"
+echo "Cotonou: $coo | Taipei: $tpe"
